@@ -1,0 +1,51 @@
+<style>
+.icon-menu {
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.line {
+  transition: 0.4s;
+  stroke: #fff;
+  stroke-width: 15px;
+  stroke-linecap: round;
+  transform: rotate(0) translateY(0) translateX(0);
+}
+
+.line--1 {
+  transform-origin: 30px 30px;
+  -webkit-transform-origin: left;
+}
+
+.line--3 {
+  transform-origin: 15px 140px;
+  -webkit-transform-origin: left;
+}
+
+.icon-menu:hover .line--2 {
+  opacity: 0;
+}
+.icon-menu:hover .line--1 {
+  transform: rotate(45deg)  translateY(0) translateX(0);
+}
+.icon-menu:hover .line--3 {
+  transform: rotate(-45deg)  translateY(0) translateX(0);
+}
+
+</style>
+
+<section data-background="#0562dc">
+	<h3>Interatividade</h3>
+	<svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 200 200">
+	  <title>Menu</title>
+	  <g>
+	    <line class="line line--1" x1="20" y1="30" x2="190" y2="30"></line>
+	    <line class="line line--2" x1="20" y1="90" x2="190" y2="90"></line>
+	    <line class="line line--3" x1="20" y1="150" x2="190" y2="150"></line>
+	  </g>
+	</svg>
+	<a class="white" href="http://codepen.io/willianjusten/pen/QwVmKg">Link do Codepen</a>
+</section>

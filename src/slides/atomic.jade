@@ -1,0 +1,40 @@
+section
+	section(data-background="#0562dc")
+		h2 Estruturando, agrupando e referenciando
+
+	section.top.sec-slide
+		h3.text-left Group
+		img(src="img/group.png", alt="Group")
+		pre
+			code.
+				<g id="bird">
+					<g id="body"><!-- desenho do corpo --></g>
+					<g id="head">
+						<path id="beak" d=" <!-- bico -->"></path>
+						<path class="eye-ball" d="<!-- parte clara do olho-->"></path>
+						<path id="pupil" d="<!-- pupila -->"></path>
+						<path class="eye-ball" d="<!-- parte escura do olho-->"></path>
+					</g>
+				</g>
+
+	section.top.sec-slide
+		h3.text-left Use
+		img(src="img/use.png", alt="Exemplo do Use")
+		pre
+			code.
+				<use xlink:href="#bird" transform="translate(100, 100)" />
+
+	section.top.sec-slide
+		h3 Defs
+		pre
+			code.
+				<svg>
+					<defs>
+						<linearGradient id="gradient">
+						<stop offset="0%" style="stop-color: deepPink"></stop>
+						<stop offset="100%" style="stop-color: #009966"></stop>
+						</linearGradient>
+					</defs>
+					<rect width="200" height="200" stroke="#eee" stroke-width="5" fill="url(#gradient)"></rect>
+				</svg>
+		include ../templates/inc/gradient.html

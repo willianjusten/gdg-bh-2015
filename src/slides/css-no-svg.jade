@@ -1,0 +1,65 @@
+section
+	section.top.sec-slide
+		h3 Propriedades de estilo
+		img(src="img/css-shared.png", alt="Css compartilhado")
+		br
+		a(href="http://www.w3.org/TR/SVG/styling.html", target="_blank") Artigo da W3C sobre o assunto
+
+	section(data-background="#0562dc")
+		h2 Métodos para Estilizar
+
+	section.top.sec-slide
+		h3 Estilo Inline
+		pre.middle
+			code.
+				<svg>
+				  <polygon points="..." style="fill:#0562DC; stroke: #000; stroke-width: 5;"/>
+				</svg>
+
+		p.text-left.middle Útil quando não se tem acesso a uma folha de estilo independente ou se deseja fazer uma rápida modificação.
+
+	section.top.sec-slide
+		h3 Estilo dentro do SVG
+		pre
+			code.
+				<svg>
+					<style type="text/css">
+						polygon {
+							fill:#0562DC;
+							stroke: #000;
+							stroke-width: 5;
+						}
+					</style>
+					<polygon points="..." />
+				</svg>
+
+		p.text-left Útil quando se deseja componentizar um elemento SVG, visto que sua estrutura e todo o seu estilo pode ser facilmente movimentado entre sistemas diferentes.
+
+	section.top.sec-slide
+		h3 Estilo no HTML
+		pre
+			code.
+				<style type="text/css">
+					polygon {
+						fill:#0562DC;
+						stroke: #000;
+					}
+				</style>
+				<svg>
+					<polygon points="..." />
+				</svg>
+
+		p.text-left Pouco utilizado, manutenção não muito adequada.
+
+	section.top.sec-slide
+		h3 Estilos externos
+		pre
+			code.
+				<?xml version="1.0" standalone="no"?>
+				<?xml-stylesheet type="text/css" href="styles.css"?>
+
+				<svg>
+				    <!-- Conteúdo do SVG -->
+				</svg>
+
+		p.text-left Quando se deseja separar o svg do estilo. Lembrando que podemos fazer chamadas comuns como se fosse css normal, utilizando "link href=style.css"

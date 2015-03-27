@@ -1,0 +1,66 @@
+section
+	section.top.sec-slide
+		h3 Como imagem
+		pre
+			code.
+				<img src="logo.svg" alt="Company Logo" />
+
+		ul
+			li.green Imagens podem ser cacheadas.
+			li.red Sem interação de CSS.
+			li.red Sem edição no DOM.
+			li.yellow Animações só funcionam se estiverem dentro do SVG.
+
+	section.top.sec-slide
+		h3 Como background
+		pre
+			code.
+				.logo {
+					background-image: url(logo.svg);
+				}
+
+		ul
+			li.green Imagens podem ser cacheadas.
+			li.red Sem interação de CSS.
+			li.red Sem edição no DOM.
+			li.yellow Animações só funcionam se estiverem dentro do SVG.
+
+	section.top.sec-slide
+		h3 Como object
+		pre
+			code.
+				<object type=”image/svg+xml” data=”mySVG.svg”>
+					<!-- fallback here -->
+				</object>
+
+		ul
+			li.green Imagens podem ser cacheadas.
+			li.green Permite edição no DOM.
+			li.green Possui mecanismo de fallback.
+			li.yellow Animações só funcionam se estiverem dentro do SVG.
+
+	section.top.sec-slide
+		h3 Iframe e Embed
+		pre
+			code.
+				<iframe src=”mySVG.svg”>
+					<!-- fallback here -->
+				</iframe>
+
+				<embed type=”image/svg+xml” src=”mySVG.svg” />
+
+		p.red Só não usem isso...
+
+	section.top.sec-slide
+		h3 Inline SVG
+		pre
+			code.
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" ..>
+					<!-- svg content -->
+				</svg>
+
+		ul
+			li.red Imagens não podem ser cacheadas.
+			li.green Permite edição no DOM.
+			li.green Animações e Interações de CSS.
+			li.green Sem requests HTTP adicionais.

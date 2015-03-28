@@ -1,8 +1,21 @@
-# Reveal.js Boilerplate
+# Slides GDG BH - 2015
 
-This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Jade](http://jade-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
+## Instalando
 
-To know more about Reveal.js and how to use, [read the docs here](https://github.com/hakimel/reveal.js).
+Primeiro de tudo, instale as depdências para rodar os slides em sua máquina.
 
+- [NodeJS](http://nodejs.org/)
+- [GulpJS](http://gulpjs.com/)
 
+```sh
+# Clone o repositório
+$ git clone git://github.com/willianjusten/gdg-bg-2015
+$ cd gdg-bg-2015
 
+# Instale as dependências do Node
+$ npm install
+```
+
+Com os comandos acima, seu projeto já está instalado e funcional. Basta digitar `gulp` para compilar o código e iniciar a apresentação.
+
+Esse projeto foi construído utilizando o [Reveal Boilerplate](https://github.com/willianjusten/reveal-boilerplate)

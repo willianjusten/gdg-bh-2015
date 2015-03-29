@@ -2,6 +2,8 @@
 
 ## Instalando
 
+[Veja a Demo](http://willianjusten.com.br/gdg-bh-2015/).
+
 Primeiro de tudo, instale as depdências para rodar os slides em sua máquina.
 
 - [NodeJS](http://nodejs.org/)
